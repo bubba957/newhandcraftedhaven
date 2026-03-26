@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 import { Quintessential, Oswald, Fascinate } from "next/font/google";
+
 
 const quintessential = Quintessential({
   weight: ['400'],
@@ -38,9 +40,15 @@ export default function Home() {
         then one day YOU may see those items here on this magnificent
         website where they'll be sold according to the price YOU want.</p>
 
-        <p className={styles.underlying}>(These items can only be sold after they have 
+      <p className={styles.underlying}>(These items can only be sold after they have 
         been created. Also a portion of the profits will be going to us
-        after everythings said and done.)</p>
+        after everything is said and done.)</p>
+
+      <div className={styles.link}>
+        <Link href="/single-item">
+          Today's Item
+        </Link>
+      </div>
     </main>
   );
 }

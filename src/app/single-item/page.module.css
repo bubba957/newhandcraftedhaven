@@ -1,0 +1,59 @@
+:root {
+  --primary-bg-color: #C2DEF9;
+  --primary-text-color: #092948;
+  --secondary-bg-color: #184709;
+  --secondary-text-color: #FFF9E0;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+  text-align: center;
+  /* This is for the paragraphs */
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.quintessential {
+  font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 50px;
+}
+
+.fascinate {
+  font-family: "Fascinate", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+ 
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.picture {
+  margin-bottom: 50px;
+}
+
+.underlying {
+  font-size: 10px;
+  font-family: "Fascinate", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.link {
+  margin: 25px 25px;
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
+  font-size: xx-large;
+}
+
+.link:hover {
+  color: #62b546;
+}
