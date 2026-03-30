@@ -1,6 +1,11 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "../page.module.css";
 import { Quintessential, Oswald, Fascinate } from "next/font/google";
+import { Card } from '../ui/cards'
+import RevenueChart from '../ui/revinue-chart';
+import LatestInvoices from '../ui/latest-invoices';
+import { fetchRevenue } from '../lib/data';
+import { fetchLatestInvoices } from '../lib/data';
 
 const quintessential = Quintessential({
   weight: ['400'],
@@ -29,6 +34,24 @@ export default function Home() {
         </a>
       </div>
       <h1 className={styles.quintessential}>Today's Item</h1>
+      <div className={styles.singleItem}>
+        <Image
+          src="/mug.webp"
+          alt="Handmade Mug"
+          width={360}
+          height={360}
+          priority
+        />
+        <div className={styles.singleItemRight}>
+          <p><span className={styles.h3}>Handmade Studio Pottery Mug Drip Glaze Earth Tone Artisan Cup</span>
+          <br></br><br></br><br></br>
+          Scout and Shore
+          <br></br><br></br><br></br>
+          Price: $32.00</p>
+          <br></br><br></br>
+          <button className={styles.btn}>Add To Cart</button>
+        </div>
+      </div>
     </main>
   );
 }
@@ -40,31 +63,30 @@ export default function Home() {
 // import styles from "../page.module.css"
 // import RevenueChart from '../ui/revinue-chart';
 // import LatestInvoices from '../ui/latest-invoices';
-// import { quintessential } from '../page.module.css';
 // import { fetchRevenue } from '../lib/data';
-// // import { fetchLatestInvoices } from '../lib/data';
+// import { fetchLatestInvoices } from '../lib/data';
  
 // export default async function Page() {
 //     const revenue = await fetchRevenue();
-//     //   const latestInvoices = await fetchLatestInvoices();
+//     const latestInvoices = await fetchLatestInvoices();
 //   return (
 //     <main>
-//       <h1 className={`${quintessential} mb-4 text-xl md:text-2xl`}>
+//       <h1 className={`${styles.quintessential} mb-4 text-xl md:text-2xl`}>
 //         Dashboard
 //       </h1>
 //       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-//         {/* <Card title="Collected" value={totalPaidInvoices} type="collected" /> */}
-//         {/* <Card title="Pending" value={totalPendingInvoices} type="pending" /> */}
-//         {/* <Card title="Total Invoices" value={numberOfInvoices} type="invoices" /> */}
-//         {/* <Card
+//         <Card title="Collected" value={totalPaidInvoices} type="collected" />
+//         <Card title="Pending" value={totalPendingInvoices} type="pending" />
+//         <Card title="Total Invoices" value={numberOfInvoices} type="invoices" />
+//         <Card
 //           title="Total Customers"
 //           value={numberOfCustomers}
 //           type="customers"
-//         /> */}
+//         />
 //       </div>
 //       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
-//         <RevenueChart revenue={revenue}  />
-//         {/* <LatestInvoices latestInvoices={latestInvoices} /> */}
+//         {/* <RevenueChart revenue={revenue}  />
+//         <LatestInvoices latestInvoices={latestInvoices} /> */}
 //       </div>
 //     </main>
 //   );
