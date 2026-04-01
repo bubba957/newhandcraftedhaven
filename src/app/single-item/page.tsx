@@ -4,7 +4,7 @@ import { Quintessential, Oswald, Fascinate } from "next/font/google";
 import { Card } from '../ui/cards'
 import RevenueChart from '../ui/revinue-chart';
 import LatestInvoices from '../ui/latest-invoices';
-import { fetchRevenue } from '../lib/data';
+// import { fetchRevenue } from '../lib/data';
 import { fetchLatestInvoices } from '../lib/data';
 
 const quintessential = Quintessential({
@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <main>
       <div className={styles.link}>
-        <a href="/">
+        <a href="/" className={styles.a}>
         Home
         </a>
       </div>
@@ -42,7 +42,7 @@ export default function Home() {
           height={360}
           priority
         />
-        <div className={styles.singleItemRight}>
+        <div>
           <p><span className={styles.h3}>Handmade Studio Pottery Mug Drip Glaze Earth Tone Artisan Cup</span>
           <br></br><br></br><br></br>
           Scout and Shore
@@ -75,10 +75,10 @@ export default function Home() {
 //         Dashboard
 //       </h1>
 //       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-//         {/* <Card title="Collected" value={totalPaidInvoices} type="collected" /> */}
-//         {/* <Card title="Pending" value={totalPendingInvoices} type="pending" /> */}
-//         {/* <Card title="Total Invoices" value={numberOfInvoices} type="invoices" /> */}
-//         {/* <Card
+//         {/* <Card title="Collected" value={totalPaidInvoices} type="collected" />
+//         <Card title="Pending" value={totalPendingInvoices} type="pending" />
+//         <Card title="Total Invoices" value={numberOfInvoices} type="invoices" />
+//         <Card
 //           title="Total Customers"
 //           value={numberOfCustomers}
 //           type="customers"

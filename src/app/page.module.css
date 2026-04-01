@@ -47,6 +47,25 @@ body {
   font-style: normal;
 }
 
+.link {
+  background-color: var(--secondary-bg-color);
+  padding: 25px;
+  font-size: xx-large;
+}
+
+.a {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+/* Second Page */
+
+.singleItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 10% 0 10%;
+}
+
 /* ********************* */
 
 /* pasted styles.css page from  team meeting:*/
