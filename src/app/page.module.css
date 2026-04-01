@@ -47,40 +47,10 @@ body {
   font-style: normal;
 }
 
-.link {
-  margin: 25px 25px;
-  background-color: var(--secondary-bg-color);
-  color: var(--secondary-text-color);
-  font-size: xx-large;
-}
-
-.link:hover {
-  color: #62b546;
-}
-
-/* Today's Item Page */
-
-.singleItem {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.singleItemRight {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.h3 {
-  font-size: large;
-}
-
-.btn {
-  padding: 10px;
-}
-
 /* ********************* */
 
 /* pasted styles.css page from  team meeting:*/
+
 
 /* <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
