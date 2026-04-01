@@ -2,9 +2,9 @@ import Image from "next/image";
 import styles from "../page.module.css";
 import { Quintessential, Oswald, Fascinate } from "next/font/google";
 import { Card } from '../ui/cards'
-import RevenueChart from '../ui/revinue-chart';
+import ProductChart from '../ui/revinue-chart';
 import LatestInvoices from '../ui/latest-invoices';
-import { fetchRevenue } from '../lib/data';
+import { fetchProduct } from '../lib/data';
 import { fetchLatestInvoices } from '../lib/data';
 
 const quintessential = Quintessential({
