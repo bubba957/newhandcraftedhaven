@@ -44,11 +44,11 @@ export default function Home() {
           priority
         />
         <div>
-          <p><span className={styles.h3}>Handmade Studio Pottery Mug Drip Glaze Earth Tone Artisan Cup</span>
+          <p><span className={styles.title}>Handmade Studio Pottery Mug Drip Glaze Earth Tone Artisan Cup</span>
           <br></br><br></br><br></br>
-          Scout and Shore
+          <span className={styles.artist}>Scout and Shore</span>
           <br></br><br></br><br></br>
-          Price: $32.00</p>
+          <span className={styles.price}>Price: $32.00</span></p>
           <br></br><br></br>
           <button className={styles.btn}>Add To Cart</button>
         </div>

@@ -62,8 +62,20 @@ body {
 
 .singleItem {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 400px 1fr;
   margin: 0 10% 0 10%;
+}
+
+.title {
+  font-size: 200%;
+}
+
+.artist {
+  font-size: 175%;
+}
+
+.price {
+  font-size: 150%;
 }
 
 /* ********************* */
