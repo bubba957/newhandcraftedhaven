@@ -3,6 +3,8 @@ import { generateYAxis } from '@/app/lib/utils';
 // import { lusitana } from '@/app/ui/fonts';
 import { product } from '@/app/lib/definitions';
 import { fetchProduct } from '@/app/lib/data';
+import styles from '../page.module.css'
+
 
 // This component is representational only.
 // For data visualization UI, check out:
@@ -47,9 +49,10 @@ export default async function ProductChart() {
                 className="w-full rounded-md bg-blue-300"
                 
               ></div>
-              <p className="-rotate-90 text-sm text-gray-400 sm:rotate-0">
-               {month.name} {month.description}
-              </p>
+              <p className="{styles.title}">
+               {month.name}</p>
+                <span className={styles.artist}>{month.description}</span>
+                <p className="{styles.price}">${month.price}</p>              
             </div>
           ))}
         </div>
