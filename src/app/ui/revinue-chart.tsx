@@ -52,7 +52,8 @@ export default async function ProductChart() {
               <p className="{styles.title}">
                {month.name}</p>
                 <span className={styles.artist}>{month.description}</span>
-                <p className="{styles.price}">${month.price}</p>              
+                <p className="{styles.price}">${month.price}</p>    
+                <p>{month.tags}</p>          
             </div>
           ))}
         </div>
