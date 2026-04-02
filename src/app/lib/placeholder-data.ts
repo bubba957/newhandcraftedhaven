@@ -13,10 +13,10 @@ const sellers = [
 const products = [
   {
     id: 'd6e15727-9fe1-4961-8c5b-ea44a9bd81aa',
-    name: 'Yellow Flower',
-    description: 'a yarn flower',
-    image_url: '/products/single-handmade-pot.avif',
-    price: '2000',
+    name: 'Handmade Studio Pottery Mug Drip Glaze Earth Tone Artisan Cup',
+    description: 'a handmade pot',
+    image_url: '/mug.webp',
+    price: '32.00',
     tags: 'decoration',
   }
 ];
