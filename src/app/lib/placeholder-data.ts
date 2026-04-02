@@ -16,7 +16,7 @@ const products = [
     name: 'Handmade Studio Pottery Mug Drip Glaze Earth Tone Artisan Cup',
     description: 'a handmade pot',
     image_url: '/mug.webp',
-    price: '32.00',
+    price: '3200',
     tags: 'decoration',
   }
 ];
