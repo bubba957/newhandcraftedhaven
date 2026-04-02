@@ -49,7 +49,7 @@ export default async function ProductChart() {
                 className="w-full rounded-md bg-blue-300"
                 
               ></div>
-              <img src={month.image_url} alt={month.name}></img>
+              <img src={month.image_url} alt={month.name} width={360}height={360}></img>
               <p className="{styles.title}">
                {month.name}</p>
                 <span className={styles.artist}>{month.description}</span>
