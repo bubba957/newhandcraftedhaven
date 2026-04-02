@@ -58,6 +58,10 @@ body {
   text-decoration: none;
 }
 
+.a:hover {
+  color: #398320;
+}
+
 /* Second Page */
 
 .singleItem {
