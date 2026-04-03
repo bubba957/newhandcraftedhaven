@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../page.module.css";
@@ -36,23 +37,50 @@ export default function Home() {
       <h1 className={styles.quintessential}>Products</h1>
       <Link href="/" className={styles.noDecoration}>
         <div className={styles.productBox}>
-            <p>Semi Antique Pictorial Rug</p>
-            <p>Jewel Rugs Collection</p>
-            <p>Price: $15750</p>
+            <Image
+                src="/rug.webp"
+                alt="Antique Rug"
+                width={135}
+                height={135}
+                priority
+            />
+            <div>
+                <p>Semi Antique Pictorial Rug</p>
+                <p>Jewel Rugs Collection</p>
+                <p>Price: $15750</p>
+            </div>
         </div>
       </Link>
       <Link href="/" className={styles.noDecoration}>
         <div className={styles.productBox}>
-            <p>Antique Wooden Baby Crib</p>
-            <p>Belltowerhouse</p>
-            <p>Price: $95</p>
+            <Image
+                src="/crib.webp"
+                alt="Wooden Crib"
+                width={135}
+                height={135}
+                priority
+            />
+            <div>
+                <p>Antique Wooden Baby Crib</p>
+                <p>Belltowerhouse</p>
+                <p>Price: $95</p>
+            </div>
         </div>
       </Link>
       <Link href="/" className={styles.noDecoration}>
         <div className={styles.productBox}>
-            <p>Set Of 2 Carpenter Bee Traps</p>
-            <p>ledi_6595</p>
-            <p>Price: $28</p>
+            <Image
+                src="/beeTraps.webp"
+                alt="Bee Traps"
+                width={135}
+                height={135}
+                priority
+            />
+            <div>
+                <p>Set Of 2 Carpenter Bee Traps</p>
+                <p>ledi_6595</p>
+                <p>Price: $28</p>
+            </div>
         </div>
       </Link>
     </main>
