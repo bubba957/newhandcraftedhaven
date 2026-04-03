@@ -59,6 +59,7 @@
 
 // below is my code for itempage, we will need to incoorate into this page.
 
+import styles from "../page.module.css";
 import { Card } from '../ui/cards'
 import ProductChart from '../ui/revinue-chart';
 import LatestInvoices from '../ui/latest-invoices';
@@ -72,13 +73,18 @@ export default async function Page() {
     //   const latestInvoices = await fetchLatestInvoices();
   return (
     <main>
-      {/* <h1 className={`${quintessential} mb-4 text-xl md:text-2xl`}>
-        Dashboard
-      </h1> */}
+      <div className={styles.link}>
+        <a href="/" className={styles.a}>
+        Home
+        </a>
+      </div>
+      <h1 className={styles.quintessential}>Today's Item</h1>
+      {/* <div className={styles.singleItem}> */}
       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
         <ProductChart />
         {/* <LatestInvoices latestInvoices={latestInvoices} /> */}
       </div>
+      {/* </div> */}
     </main>
   );
 }

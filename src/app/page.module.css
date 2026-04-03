@@ -48,6 +48,7 @@ body {
 }
 
 .link {
+  margin-bottom: 25px;
   background-color: var(--secondary-bg-color);
   padding: 25px;
   font-size: xx-large;
