@@ -59,6 +59,7 @@
 
 // below is my code for itempage, we will need to incoorate into this page.
 
+import Link from "next/link";
 import styles from "../page.module.css";
 import { Card } from '../ui/cards'
 import ProductChart from '../ui/revinue-chart';
@@ -74,9 +75,13 @@ export default async function Page() {
   return (
     <main>
       <div className={styles.link}>
-        <a href="/" className={styles.a}>
+        <Link href="/" className={styles.a}>
         Home
-        </a>
+        </Link>
+        <span className={styles.linkDivider}>|</span>
+        <Link href="/products">
+          Our Products
+        </Link>
       </div>
       <h1 className={styles.quintessential}>Today's Item</h1>
       {/* <div className={styles.singleItem}> */}

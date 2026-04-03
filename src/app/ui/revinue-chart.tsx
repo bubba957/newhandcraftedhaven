@@ -38,10 +38,10 @@ export default async function ProductChart() {
           {product.map((month) => (
             <div key={month.name} className="flex flex-col items-center gap-2">
               <div className="w-full rounded-md bg-blue-300"></div>
-              <img src={month.image_url} alt={month.name} width={360}height={360}></img>
-              <p className="{styles.title}">{month.name}</p>
+              <img src={month.image_url} alt={month.name} width={360} height={360}></img>
+              <p className={styles.title}>{month.name}</p>
               <span className={styles.artist}>{month.description}</span>
-              <p className="{styles.price}">${month.price}</p>    
+              <p className={styles.price}>${month.price}</p>    
               <p>{month.tags}</p>          
             </div>
           ))}

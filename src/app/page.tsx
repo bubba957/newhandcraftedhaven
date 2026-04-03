@@ -45,9 +45,14 @@ export default function Home() {
         after everything is said and done.)</p>
 
       <div className={styles.link}>
-        <Link href="/single-item" className={styles.a}>
+        <Link href="/single-item">
           Today's Item
         </Link>
+        <span className={styles.linkDivider}>|</span>
+        <Link href="/products">
+          Our Products
+        </Link>
+        
       </div>
     </main>
   );

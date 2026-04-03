@@ -5,17 +5,6 @@
   --secondary-text-color: #FFF9E0;
 }
 
-body {
-  color: var(--primary-text-color);
-  background-color: var(--primary-bg-color);
-  text-align: center;
-  /* This is for the paragraphs */
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
 .quintessential {
   font-family: "Quintessential", serif;
   font-weight: 400;
@@ -54,13 +43,9 @@ body {
   font-size: xx-large;
 }
 
-.a {
-  color: var(--secondary-text-color);
-  text-decoration: none;
-}
-
-.a:hover {
-  color: #398320;
+.linkDivider {
+  margin: 0 10px 0 10px;
+  color: #ff0000;
 }
 
 /* Single-Item Page */
@@ -81,6 +66,25 @@ body {
 
 .price {
   font-size: 150%;
+}
+
+/* Products Page */
+
+.productBox {
+  margin: 1% 0 1% 0;
+  padding-left: 1%;
+  text-align: left;
+  text-decoration: none;
+  border: #FFF9E0;
+  border-style: outset;
+}
+
+.noDecoration {
+  color: var(--primary-text-color);
+}
+
+.noDecoration:hover {
+  color: var(--primary-text-color);
 }
 
 /* ********************* */
