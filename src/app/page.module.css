@@ -48,6 +48,13 @@
   color: #ff0000;
 }
 
+.btn {
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
+  padding: 10px;
+  font-size: 20px;
+}
+
 /* Products Page */
 
 .productBox {

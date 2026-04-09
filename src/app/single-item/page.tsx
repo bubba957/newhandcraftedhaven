@@ -33,6 +33,9 @@ export default async function Page() {
         {/* <LatestInvoices latestInvoices={latestInvoices} /> */}
       </div>
       {/* </div> */}
+      <a href="/bought">
+        <button className={styles.btn}>Add To Cart</button>
+      </a>
     </main>
   );
 }
