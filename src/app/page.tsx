@@ -52,7 +52,10 @@ export default function Home() {
         <Link href="/products">
           Our Products
         </Link>
-        
+        <span className={styles.linkDivider}>|</span>
+        <Link href="/shopping-cart">
+          Shopping Cart
+        </Link>
       </div>
     </main>
   );

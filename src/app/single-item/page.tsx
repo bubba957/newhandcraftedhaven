@@ -15,11 +15,15 @@ export default async function Page() {
     <main>
       <div className={styles.link}>
         <Link href="/" className={styles.a}>
-        Home
+          Home
         </Link>
         <span className={styles.linkDivider}>|</span>
         <Link href="/products">
           Our Products
+        </Link>
+        <span className={styles.linkDivider}>|</span>
+        <Link href="/shopping-cart">
+          Shopping Cart
         </Link>
       </div>
       <h1 className={styles.quintessential}>Today's Item</h1>

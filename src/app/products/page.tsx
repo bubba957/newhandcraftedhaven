@@ -27,11 +27,15 @@ export default function Home() {
     <main>
       <div className={styles.link}>
         <Link href="/">
-        Home
+          Home
         </Link>
         <span className={styles.linkDivider}>|</span>
         <Link href="/single-item">
-            Todays Item
+          Todays Item
+        </Link>
+        <span className={styles.linkDivider}>|</span>
+        <Link href="/shopping-cart">
+          Shopping Cart
         </Link>
       </div>
       <h1 className={styles.quintessential}>Products</h1>
