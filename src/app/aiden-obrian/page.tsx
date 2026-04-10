@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../page.module.css";
@@ -45,10 +46,34 @@ export default function Home() {
           Seller Profiles
         </Link>
       </div>
-      <h1>Added to cart</h1>
-      <a href="/products">
-        <button className={styles.btn}>Continue Shopping</button>
-      </a>
+      <h1 className={styles.quintessential}>Aiden O'Brien</h1>
+      <div>
+          <Image
+                src="/aiden_obrien.png"
+                alt="aiden obrien"
+                width={272}
+                height={500}
+                priority
+            />
+            <p>This man is a very precise worker and it shows in his products. But he's not only a seller on Handcrafted Haven but the site 
+                manager as well. He created the rug and the crib.</p>
+            <div className={styles.orderSum}>
+                <Image
+                src="/rug.webp"
+                alt="Antique Rug"
+                width={75}
+                height={75}
+                priority
+            />
+                <Image
+                    src="/crib.webp"
+                    alt="Wooden Crib"
+                    width={75}
+                    height={75}
+                    priority
+                />
+            </div>
+      </div>
     </main>
   );
 }

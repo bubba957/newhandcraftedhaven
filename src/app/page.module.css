@@ -118,6 +118,13 @@
   margin: 100px;
 }
 
+/* Seller Profiles */
+
+.profiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 /* ********************* */
 
 /* pasted styles.css page from  team meeting:*/

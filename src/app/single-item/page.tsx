@@ -69,6 +69,10 @@ export default async function Page() {
         <Link href="/shopping-cart">
           Shopping Cart
         </Link>
+        <span className={styles.linkDivider}>|</span>
+        <Link href="/seller-profiles">
+          Seller Profiles
+        </Link>
       </div>
       <h1 className={styles.quintessential}>Today's Item</h1>
       {/* <div className={styles.singleItem}> */}
