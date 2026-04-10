@@ -34,7 +34,7 @@ export default function Home() {
         </Link>
         <span className={styles.linkDivider}>|</span>
         <Link href="/products">
-          Products
+          Our Products
         </Link>
         <span className={styles.linkDivider}>|</span>
         <Link href="/shopping-cart">

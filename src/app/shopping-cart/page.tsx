@@ -34,7 +34,7 @@ export default function Home() {
         </Link>
         <span className={styles.linkDivider}>|</span>
         <Link href="/products">
-          Products
+          Our Products
         </Link>
       </div>
       <h1 className={styles.quintessential}>Shopping Cart</h1>
