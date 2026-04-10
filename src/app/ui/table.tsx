@@ -1,5 +1,6 @@
 import { fetchItem, fetchProduct } from "../lib/data";
 import ProductChart, { ProductItem } from "./revinue-chart";
+import Link from "next/link";
 
 export default async function Table({
   query
@@ -37,9 +38,9 @@ export default async function Table({
                 <span >{thing.description}</span>
                 <p className="{styles.price}">${thing.price}</p>    
                 <p>{thing.tags}</p>   
-                {/* <Link href={`view/${thing.id}`}
+                <Link href={`view/${thing.id}`}
                 // onNavigate={(e) => {fetchItem(`${month.id}`)}}
-                >{thing.name}</Link>    */}
+                >{thing.name}</Link>   
                 
             </div>
             </div>

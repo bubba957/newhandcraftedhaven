@@ -47,9 +47,9 @@ export default async function ProductChart() {
                 <span className={styles.artist}>{month.description}</span>
                 <p className="{styles.price}">${month.price}</p>    
                 <p>{month.tags}</p>   
-                {/* <Link href={`view/${month.id}`}
+                <Link href={`view/${month.id}`}
                 // onNavigate={(e) => {fetchItem(`${month.id}`)}}
-                >{month.name}</Link>    */}
+                >{month.name}</Link>   
                 
             </div>
           ))}

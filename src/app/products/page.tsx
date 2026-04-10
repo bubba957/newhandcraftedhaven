@@ -158,7 +158,7 @@ export default async function Home(props: {
       </div>
       <h1 className={styles.quintessential}>Products</h1>
       <Search placeholder=''/>
-      <Link href="/" className={styles.noDecoration}>
+      {/* <Link href="/" className={styles.noDecoration}> */}
          <Suspense key={query} fallback={<InvoicesTableSkeleton />}>
         <Table query={query || 'a'}  />
       </Suspense>
@@ -209,7 +209,7 @@ export default async function Home(props: {
                 <p>Price: $28</p>
             </div>
         </div> */}
-      </Link>
+      {/* </Link> */}
     </main>
   );
 }
