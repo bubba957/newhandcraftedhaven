@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../page.module.css";
@@ -45,10 +46,25 @@ export default function Home() {
           Seller Profiles
         </Link>
       </div>
-      <h1>Added to cart</h1>
-      <a href="/products">
-        <button className={styles.btn}>Continue Shopping</button>
-      </a>
+      <h1 className={styles.quintessential}>Frank Romano</h1>
+      <div>
+          <Image
+                src="/frank-romano.png"
+                alt="frank romano"
+                width={500}
+                height={500}
+                priority
+            />
+            <p>Frank is someone who likes creating anything that has to do with the outdoors. His motto is, "If you want it, I can build it." 
+                That's just the type of man he is. He created the bee traps.</p>
+            <Image
+                src="/beeTraps.webp"
+                alt="Bee Traps"
+                width={75}
+                height={75}
+                priority
+            />
+      </div>
     </main>
   );
 }

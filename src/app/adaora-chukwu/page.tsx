@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../page.module.css";
@@ -45,10 +46,26 @@ export default function Home() {
           Seller Profiles
         </Link>
       </div>
-      <h1>Added to cart</h1>
-      <a href="/products">
-        <button className={styles.btn}>Continue Shopping</button>
-      </a>
+      <h1 className={styles.quintessential}>Adaora Chukwu</h1>
+      <div>
+          <Image
+              src="/adaora-chukwu.png"
+              alt="adaora chuckwu"
+              width={500}
+              height={500}
+              priority
+          />
+            <p>Adaora was born and raised over in Nigeria. And so with that being said she has brought over some handcrafted Nigerian artifacts
+              to share with the people of America. She made the mug.
+            </p>
+            <Image
+                src="/mug.webp"
+                alt="A Handcrafted Mug"
+                width={75}
+                height={75}
+                priority
+            />
+      </div>
     </main>
   );
 }

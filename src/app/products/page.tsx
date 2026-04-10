@@ -58,6 +58,10 @@ export default async function Home(props: {
         <Link href="/shopping-cart">
           Shopping Cart
         </Link>
+        <span className={styles.linkDivider}>|</span>
+        <Link href="/seller-profiles">
+          Seller Profiles
+        </Link>
       </div>
       <h1 className={styles.quintessential}>Products</h1>
       <Search placeholder=''/>

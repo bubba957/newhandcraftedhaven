@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../page.module.css";
@@ -35,6 +36,10 @@ export default function Home() {
         <span className={styles.linkDivider}>|</span>
         <Link href="/products">
           Our Products
+        </Link>
+        <span className={styles.linkDivider}>|</span>
+        <Link href="/seller-profiles">
+          Seller Profiles
         </Link>
       </div>
       <h1 className={styles.quintessential}>Shopping Cart</h1>
